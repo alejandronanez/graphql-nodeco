@@ -1,0 +1,27 @@
+{
+  "name": "@alejandronanez/graphql",
+  "version": "1.0.0",
+  "description": "GraphQL repo for NodeCo's meetup",
+  "main": "src/index.js",
+  "repository": "https://github.com/alejandronanez/graphql-nodeco.git",
+  "author": "Alejandro Nanez <alejonanez@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.4",
+    "nodemon": "^1.17.3",
+    "prettier": "1.12.0"
+  }
+}

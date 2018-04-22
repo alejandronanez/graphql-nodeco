@@ -8,13 +8,11 @@
   "license": "MIT",
   "private": false,
   "lint-staged": {
-    "*.{js,json,css,md}": [
-      "prettier --write",
-      "git add"
-    ]
+    "*.{js,json,css,md}": ["prettier --write", "git add"]
   },
   "scripts": {
     "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
     "precommit": "lint-staged"
   },
   "devDependencies": {
